@@ -29,13 +29,24 @@ To set up the Administrator Applicaiton, you must do the following:
 
 To set up the Client Applicaiton, you must do the following:
 
-1. Update the PostgreSQL connection parameters at the beginning of these files:
+1. Update the connection parameters at the beginning of these files:
 
-      A. client.cpp
-     
+      A. client.cpp (PostgreSQL Setup)
+      
+      ![image](https://user-images.githubusercontent.com/44332803/212840584-e0a135f7-d638-438c-b643-4d689292f4fa.png)
+      
+      B. client.cpp (Server Connection)
+      
+      ![image](https://user-images.githubusercontent.com/44332803/212840778-ebd4d6d2-ba18-4da8-baac-7da6b493db08.png)
+
   
 2. Update the directory path where the repositories are stored in the following files:
 
       A. clientapplication.cpp
         
-      
+      ![image](https://user-images.githubusercontent.com/44332803/212841142-7c3fb309-1d5f-40e4-adc2-423a48e30e10.png)
+
+
+
+
+Note: The port number for the sever/client connection is 5555. This can be changed in the files.
