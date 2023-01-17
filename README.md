@@ -1,7 +1,9 @@
 # Directory-Manager
-A directory management system that allows a company to separate employee access to information. Employees may be assigned to a directory and cannot access different directories’ information.
+A directory management system that allows a company to separate employee access to information. Employees may be assigned to a directory and cannot access different directories’ information. 
 
 ## Administrator Application
+
+The administrator application allows admins to control the server, view users activity, and create repositories. Admins may create other administrator accounts as well. When a repository is created, and selected from the drop down menu, they may add users to that repository, and set their permission level.
 
 To set up the Administrator Applicaiton, you must do the following:
 
@@ -24,6 +26,16 @@ To set up the Administrator Applicaiton, you must do the following:
       
       ![image](https://user-images.githubusercontent.com/44332803/212836967-04283071-def5-4292-afe7-d3fdb44ec073.png)
 
+3. Upon startup, the application prompts the admin to sign in. You may use the following SQL query to add a starter admin account:
+    
+            INSERT INTO public."Users"("ID", "firstName", "lastName", "Email", "Password", "isAdmin") 
+                  VALUES (0, 'Admin', 'Admin', 'Admin', 'Admin', 1);
+      
+      It is recommended to create an admin account with stronger credentials immediately. Use the following to delete the old admin account:
+      
+            DELETE FROM public."Users" WHERE "ID" = 0;
+      
+      
 
 ## Client Application
 
