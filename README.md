@@ -1,5 +1,5 @@
 # Directory-Manager
-A directory management system that allows a company to separate employee access to information. Employees may be assigned to a directory and cannot access different directories’ information. Created using the Qt Framework for C++.
+A directory management system that enables the control of information access between different groups. Groups may be assigned to a directory and cannot access different directories’ information. Created using the Qt Framework for C++.
 
 ## Administrator Application
 
@@ -39,7 +39,7 @@ To set up the Administrator Applicaiton, you must do the following:
 
 ## Client Application
 
-To set up the Client Applicaiton, you must do the following:
+To set up the Client Application, you must do the following:
 
 1. Update the connection parameters at the beginning of these files:
 
